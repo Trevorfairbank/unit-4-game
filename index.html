@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <div class="title">
     <h1>CrystalsCollector!</h1>
-
-    <div class=instructions>
+    </div>
+    <div class="instructions">
         <p> You will be given a random number at the start of the game.</p>
         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
         <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
@@ -19,20 +20,20 @@
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
 
-    <div id=randomNumBox>#39</div>
-    <div id=winLossBox>
-        <p>Wins:<span class=wins></span></p>
-        <p>Losses:<span class=losses></span></p>
+    <div id="randomNumBox">#39</div>
+    <div id="winLossBox">
+        <p>Wins:<span class="wins"></span></p>
+        <p>Losses:<span class="losses"></span></p>
 
     </div>
-    <div class=crystals>
-        <button id=crystal-1></button>
-        <button id=crystal-2></button>
-        <button id=crystal-3></button>
-        <button id=crystal-4></button>
+    <div class="crystals">
+        <button class="crystal"></button>
+        <button class="crystal"></button>
+        <button class="crystal"></button>
+        <button class="crystal"></button>
     </div>
-    <div><p>Your total score is:</p></div>
-    <div id=totalScore></div>
+    <div class="totalTextbox"><p class="totalText">Your total score is:</p></div>
+    <div id="totalScore">#0</div>
 
     <script src="assets/javascript/game.js"></script>
     
