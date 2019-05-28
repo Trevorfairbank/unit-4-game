@@ -1,6 +1,15 @@
 //declare variables
 
 //You will be given a random number at the start of the game.
+var High = 100
+var Low = 1
+var randomNum = Math.floor(Math.random() * (1 + High - Low)) + Low
+
+console.log(randomNum);
+
+var showNumber = document.getElementById("randomNumber");
+//display randomNumber
+showNumber.textContent = randomNum;
 
 //There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
 
