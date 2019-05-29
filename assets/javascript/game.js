@@ -33,6 +33,7 @@ function resetGame() {
     $("#totalScore").text(score);
 
     for(var i = 0; i < $(".crystal").length;i++){
+        var crystalVal = getRandomInt(1,12);
         $("#crystal-"+i).val(crystalVal);
     }    
 }
@@ -43,6 +44,7 @@ $(".crystal").on("click", function(){
     $("#totalScore").text("");
     //get value from gem
     var crystalTotal = parseInt($(this).val());
+    //add score plus crystalTotal
     score += crystalTotal;
     $("#totalScore").text(score);
     console.log(crystalTotal);
@@ -60,9 +62,3 @@ $(".crystal").on("click", function(){
         resetGame();
     }
 });
-
-//You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
-
-//The value of each crystal is hidden from you until you click on it.
-
-//Each time when the game starts, the game will change the values of each crystal.
