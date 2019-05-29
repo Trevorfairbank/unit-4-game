@@ -24,21 +24,23 @@
     </div>
 
     <div id="randomNumBox">
-        <h2 id="randomNumber"></h2>
+        <h2><span id="randomNumber"></span></h2>
     </div>
     <div id="winLossBox">
-        <p>Wins:<span class="wins"></span></p>
-        <p>Losses:<span class="losses"></span></p>
+        <p>Wins:<span id="wins"></span></p>
+        <p>Losses:<span id="losses"></span></p>
 
     </div>
-    <div class="crystals">
-        <button class="crystal"></button>
-        <button class="crystal"></button>
-        <button class="crystal"></button>
-        <button class="crystal"></button>
+    <div class="container">
+        <button class=crystal id="crystal-0" val="2"><img src="assets/images/blue-crystal.png" width="90" height="90"></button>
+        <button class=crystal id="crystal-1" val="5"><img src="assets/images/gold-crystal.png" width="90" height="90"></button>
+        <button class=crystal id="crystal-2" val="6"><img src="assets/images/pink-crystal.png" width="90" height="90"></button>
+        <button class=crystal id="crystal-3" val="3"><img src="assets/images/red-crystal.png" width="90" height="90"></button>
     </div>
     <div class="totalTextbox"><p class="totalText">Your total score is:</p></div>
-    <div id="totalScore">#0</div>
+    <div id=totalBox>
+        <h2 id="totalScore"></h2>
+    </div>
 
     <script src="assets/javascript/game.js"></script>
     

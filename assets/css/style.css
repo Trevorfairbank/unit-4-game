@@ -3,15 +3,16 @@ body {
 }
 
 .title {
-    width:30%;
+    width:50%;
     padding:10px;
     background-color:orange;
     margin:10px;
     text-align: center;
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
+
 p {
     color:green;
     padding:20px;
@@ -19,8 +20,8 @@ p {
 .instructions {
     background-color: beige;
     margin: 10px;
-    padding:20px;
-    width:35%;
+    padding:10px;
+    width:50%;
 }
 #randomNumBox {
     background-color: green;
@@ -37,12 +38,8 @@ p {
     float:left;
 }
 
-.crystals {
+.container {
     clear:both;
-}
-.crystal {
-    width:100px;
-    height:100px;
 }
 .totalText {
     color:white;
@@ -55,14 +52,18 @@ p {
     width:20%;
 
 }
-#totalScore {
+#crystal-0, #crystal-1, #crystal-2, #crystal-3 {
+    width:100px;
+    height:100px;
+}
+#totalBox {
     background-color: green;
     margin:10px;
     width:20%;
     height:111px;
 }
 #randomNumber {
-    margin-left:10%;
-    margin-top:10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:2em;
 
 }
