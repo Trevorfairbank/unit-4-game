@@ -1,7 +1,7 @@
 //You will be given a random number at the start of the game.
 //declare function that creates a random number
 function getRandomInt(min,max){
-    return Math.floor(Math.random() * max) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
